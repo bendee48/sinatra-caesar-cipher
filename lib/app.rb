@@ -7,7 +7,9 @@ class CaesarCipher < Sinatra::Base
     register Sinatra::Reloader
   end
 
+  set :views, settings.root + '/app/views'
+
   get '/' do
-    "Hallo there people. A wee change."
+    erb :index
   end
 end
