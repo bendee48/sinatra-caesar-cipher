@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'sinatra'
 require 'sinatra/base'
 require 'sinatra/reloader' if development?
@@ -10,7 +12,7 @@ class CaesarApp < Sinatra::Base
 
   set :root, 'lib/app'
 
-  @@message = ""
+  @@message = ''
 
   get '/' do
     erb :index
