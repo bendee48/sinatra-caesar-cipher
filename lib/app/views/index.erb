@@ -1,13 +1,12 @@
 <h1>Caesar Cipher</h1>
-<div class='container'>
-  <form action='/' method='POST'>
-    <label>Message:</label><br />
-    <input type='text' name='message' /><br />
-    <label>Number to offset by:</label><br />
-    <input type='number' name='num_offset' min='-26' max='26'/><br />
-    <input type='submit' value='Generate'>
-  </form>
-</div>
+
+<form action='/' method='POST'>
+  <label>Message:</label><br />
+  <input type='text' name='message' /><br />
+  <label>Number to offset by:</label><br />
+  <input type='number' name='num_offset' min='-26' max='26'/><br />
+  <input type='submit' value='Generate'>
+</form>
 
 <p>New Message:</p>
 <h3><%= @@message %></h3>
